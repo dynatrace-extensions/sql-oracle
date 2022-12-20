@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      6
+    ],
+    "clusterVersion": "1.238.0.20220308-200019"
+  },
+  "id": "7c8fa83e-5a60-4904-ac94-8b7a9fae553c",
+  "metricSelector": "func:com.dynatrace.extension.sql-oracle.memory.bufferCacheHitRatio:splitBy(device):avg:auto:sort(value(avg,descending)):limit(100)",
+  "name": "SQL Oracle Low buffer cache hit rate",
+  "description": "The {metricname} value of {severity} was {alert_condition} your custom threshold of {threshold}.",
+  "severity": "CUSTOM_ALERT",
+  "enabled": true,
+  "disabledReason": "NONE",
+  "warningReason": "NONE",
+  "monitoringStrategy": {
+    "type": "STATIC_THRESHOLD",
+    "samples": 5,
+    "violatingSamples": 3,
+    "dealertingSamples": 5,
+    "alertCondition": "BELOW",
+    "alertingOnMissingData": false,
+    "threshold": 80.0,
+    "unit": "PERCENT"
+  },
+  "alertCondition": "BELOW",
+  "samples": 5,
+  "violatingSamples": 3,
+  "dealertingSamples": 5,
+  "threshold": 80.0,
+  "unit": "PERCENT",
+  "eventType": "CUSTOM_ALERT"
+}

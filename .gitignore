@@ -1,0 +1,18 @@
+# intermediate files
+extension.zip
+extension.zip.sig
+
+# artifacts
+bundle.zip
+
+# nix build output symlink
+result
+
+# dep
+secrets/*
+
+# internal tooling hooks
+dynatrace-internal
+
+# IDE
+.idea/

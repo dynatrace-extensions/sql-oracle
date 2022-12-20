@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      6
+    ],
+    "clusterVersion": "1.238.0.20220308-200019"
+  },
+  "id": "59c3d4df-6d17-4f18-af5e-929fc9888099",
+  "metricSelector": "func:com.dynatrace.extension.sql-oracle.memory.sortsInMemory:splitBy(device):avg:auto:sort(value(avg,descending)):limit(100)",
+  "name": "SQL Oracle Low sorts in memory",
+  "description": "The {metricname} value of {severity} was {alert_condition} your custom threshold of {threshold}.",
+  "severity": "CUSTOM_ALERT",
+  "enabled": true,
+  "disabledReason": "NONE",
+  "warningReason": "NONE",
+  "monitoringStrategy": {
+    "type": "STATIC_THRESHOLD",
+    "samples": 5,
+    "violatingSamples": 3,
+    "dealertingSamples": 5,
+    "alertCondition": "BELOW",
+    "alertingOnMissingData": false,
+    "threshold": 80.0,
+    "unit": "PERCENT"
+  },
+  "alertCondition": "BELOW",
+  "samples": 5,
+  "violatingSamples": 3,
+  "dealertingSamples": 5,
+  "threshold": 80.0,
+  "unit": "PERCENT",
+  "eventType": "CUSTOM_ALERT"
+}

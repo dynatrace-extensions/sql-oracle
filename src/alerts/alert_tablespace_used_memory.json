@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "configurationVersions": [
+      6
+    ],
+    "clusterVersion": "1.238.0.20220308-200019"
+  },
+  "id": "58b0a616-c407-4d11-8abe-98656aa32fcf",
+  "metricSelector": "func:com.dynatrace.extension.sql-oracle.tablespaces.usedRatio:splitBy(device,tablespace):avg:auto:sort(value(avg,descending)):limit(100)",
+  "name": "SQL Oracle High tablespace used memory",
+  "description": "The {metricname} value of {severity} was {alert_condition} your custom threshold of {threshold}.",
+  "severity": "CUSTOM_ALERT",
+  "enabled": true,
+  "disabledReason": "NONE",
+  "warningReason": "NONE",
+  "monitoringStrategy": {
+    "type": "STATIC_THRESHOLD",
+    "samples": 5,
+    "violatingSamples": 3,
+    "dealertingSamples": 5,
+    "alertCondition": "ABOVE",
+    "alertingOnMissingData": false,
+    "threshold": 90.0,
+    "unit": "PERCENT"
+  },
+  "alertCondition": "ABOVE",
+  "samples": 5,
+  "violatingSamples": 3,
+  "dealertingSamples": 5,
+  "threshold": 90.0,
+  "unit": "PERCENT",
+  "eventType": "CUSTOM_ALERT"
+}
