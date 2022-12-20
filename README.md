@@ -1,6 +1,6 @@
 # SQL Oracle Extension
 **This is intended for users, who:**
-- would like to monitor health state and performance of Oracle database. Dynatrace automatically detects all applications and microservices deployed in your system and how it uses Oracle database. It provides automatic end-to-end tracing down to the single SQL statement, Oracle server metrics and log insights. Dynatrace diagnoses anomalies in real time with AI and pinpoints the root-cause down to the slow performing or erroneous SQL statements. Deep code-level insights combined with cloud native database server monitoring will help you ensure a robust production environment.
+would like to monitor health state and performance of Oracle database. Dynatrace automatically detects all applications and microservices deployed in your system and how it uses Oracle database. It provides automatic end-to-end tracing down to the single SQL statement, Oracle server metrics and log insights. Dynatrace diagnoses anomalies in real time with AI and pinpoints the root-cause down to the slow performing or erroneous SQL statements. Deep code-level insights combined with cloud native database server monitoring will help you ensure a robust production environment.
 
 **The extension package contains:**
 - Monitor infrastructure with a comprehensive dashboard
